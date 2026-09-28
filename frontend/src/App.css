@@ -1,0 +1,322 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f6f8fc;
+  color: #172033;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+  height: 72px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid #e7eaf0;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 800;
+  color: #4f46e5;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 32px;
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: #5d6472;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  color: #4f46e5;
+}
+
+/* Hero */
+
+.hero-section {
+  padding: 70px 20px 90px;
+  background: linear-gradient(135deg, #eef2ff, #f8faff);
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 30px;
+  background: #e0e7ff;
+  color: #4338ca;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  margin: 0;
+  font-size: clamp(42px, 7vw, 72px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+
+.hero-content h1 span {
+  display: block;
+  color: #4f46e5;
+}
+
+.hero-text {
+  max-width: 700px;
+  margin: 24px auto 40px;
+  color: #626b7d;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* Translator Card */
+
+.translator-card {
+  max-width: 700px;
+  margin: auto;
+  padding: 32px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(35, 45, 80, 0.12);
+  text-align: left;
+}
+
+.translator-card h2 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Upload */
+
+.upload-box {
+  min-height: 170px;
+  border: 2px dashed #aab3c5;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  padding: 20px;
+  transition: 0.2s;
+}
+
+.upload-box:hover {
+  border-color: #4f46e5;
+  background: #f8f8ff;
+}
+
+.upload-box input {
+  display: none;
+}
+
+.upload-icon {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.upload-box strong {
+  font-size: 17px;
+}
+
+.upload-box small {
+  margin-top: 6px;
+  color: #7a8291;
+}
+
+/* Languages */
+
+.language-row {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 40px 1fr;
+  align-items: end;
+  gap: 12px;
+}
+
+.language-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.language-field label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #555d6e;
+}
+
+.language-field select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d9deea;
+  border-radius: 10px;
+  background: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.arrow {
+  text-align: center;
+  font-size: 25px;
+  color: #4f46e5;
+  padding-bottom: 8px;
+}
+
+/* Button */
+
+.translate-button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #4f46e5;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.translate-button:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+.privacy-text {
+  text-align: center;
+  color: #858c9b;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+/* Features */
+
+.features-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: white;
+}
+
+.features-section h2,
+.about-section h2 {
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.section-description {
+  color: #6c7484;
+  margin-bottom: 45px;
+}
+
+.feature-grid {
+  max-width: 1050px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.feature-card {
+  padding: 30px;
+  border: 1px solid #e6e9f0;
+  border-radius: 18px;
+  background: #fafbff;
+}
+
+.feature-icon {
+  font-size: 40px;
+}
+
+.feature-card h3 {
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* About */
+
+.about-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: #eef2ff;
+}
+
+.about-section p {
+  max-width: 650px;
+  margin: auto;
+  color: #626b7d;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Footer */
+
+footer {
+  padding: 25px;
+  text-align: center;
+  background: #111827;
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar nav {
+    display: none;
+  }
+
+  .hero-section {
+    padding-top: 45px;
+  }
+
+  .translator-card {
+    padding: 22px;
+  }
+
+  .language-row {
+    grid-template-columns: 1fr;
+  }
+
+  .arrow {
+    transform: rotate(90deg);
+    padding: 0;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
